@@ -1,9 +1,7 @@
 This is BOT, it will ask some questions to google bard and translate answers on the telegram chat)
 
-we need to have a .env file:
-
 ALSO: You need to have .env file, with arguments: 
-
+```
 BOT_CONTAINER_NAME= 
 
 BOT_IMAGE_NAME= 
@@ -23,3 +21,4 @@ DB_PASS=0
 DB_USER= 
 
 DB_NAME=
+```
