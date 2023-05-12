@@ -1,6 +1,6 @@
-This is BOT, that can help you to learn worlds on other languages. 
-You will send excel file (.xlsx), where in one coloumn will be word, in other translate of the world.
+This is BOT, it will ask some questions to google bard and translate answers on the telegram chat)
 
+we need to have a .env file:
 
 ALSO: You need to have .env file, with arguments: 
 
