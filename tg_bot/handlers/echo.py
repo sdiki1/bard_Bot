@@ -12,11 +12,14 @@ chatbot = Chatbot(token)
 
 
 async def bot_echo(message: types.Message):
-    answer = chatbot.ask(message.text)
     logger.info(f'user tg_id: {message.from_user.id}, ask to bard: {message.text}')
-    await message.answer(answer['content'])
-
-
+    answer = chatbot.ask(message.text)
+    if 'Google Bard encountered an error:' in answer:
+        logger.error(f'{answer}')
+        await message.answer('Some troubles with bard, wait some time')
+    else:
+        logger.info(f'user tg_id: {message.from_user.id}, answer from broad has been got')
+        await message.answer(answer['content'])
 
 
 def register_echo(dp: Dispatcher):
