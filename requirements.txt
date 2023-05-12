@@ -1,0 +1,7 @@
+aiogram >= 2.0,<3.0
+aioredis
+environs ==8.0.0
+requests
+urllib3==1.26.6
+prompt_toolkit
+rich
